@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaveen's Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kaveen's Shop</h1>
+    </header>
+    <section class="product">
+        <div class="item">
+            <img src="milk_bottle.jpg" alt="Human Milk">
+            <p>Human Milk</p>
+            <button onclick="showError()">Buy</button>
+        </div>
+        <div class="item">
+            <img src="balloons.jpg" alt="Flavoured Balloons">
+            <p>Flavoured Balloons</p>
+            <button onclick="showError()">Buy</button>
+        </div>
+        <div class="item">
+            <img src="heart.jpg" alt="Creamy Sticky Liquid">
+            <p>Creamy Sticky Liquid</p>
+            <button onclick="showError()">Buy</button>
+        </div>
+    </section>
+
+    <div id="error-message" style="display: none;">
+        <p>UNFORTUNATELY YOU ARE GAY</p>
+    </div>
+
+    <script>
+        function showError() {
+            // Make the error message visible when the button is clicked
+            document.getElementById("error-message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
